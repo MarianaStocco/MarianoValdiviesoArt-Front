@@ -25,6 +25,8 @@ import FavoriteBorderOutlinedIcon from '@mui/icons-material/FavoriteBorderOutlin
 import LocalPoliceIcon from '@mui/icons-material/LocalPolice';
 import Skeleton from '@mui/material/Skeleton';
 import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+import CoffeeIcon from '../../assets/bmc.png';
+import Paypal from '../../assets/paypal.png';
 
 export default function DetailProduct() {
 
@@ -394,6 +396,49 @@ export default function DetailProduct() {
                                         >Download!
                                         </Button>
                                     </a>
+                                </div>
+                                <div className='row-span-3 gap-4'>
+                                    <span>
+                                        <h1  className='mt-6'>
+                                            Mis obras son gratuitas! Por favor, apoya mi trabajo
+                                        </h1>
+                                    </span>
+                                <div >
+                                    <a href="https://www.buymeacoffee.com/amhiank">
+                                        <Button >
+                                            <img
+                                                src={CoffeeIcon}
+                                                alt="buymeacoffee"
+                                                className='mt-2 w-15 h-10  md:rounded-none  mx-auto'
+                                            />
+                                        </Button>
+                                    </a>
+                                </div>
+                                <div >
+                                    <a href="https://www.paypal.com/donate/?hosted_button_id=KJ687YP5RMRZC">
+                                        <Button >
+                                            <img
+                                                src={Paypal}
+                                                alt="paypaldonate"
+                                                className='w-15 h-20  md:rounded-none  mx-auto'
+                                            />
+                                        </Button>
+                                    </a>
+                                </div>
+                                <div >
+                                    <a href='https://cafecito.app/amhiank'
+                                        rel='noopener'
+                                        target='_blank'>
+                                        <Button >
+                                            <img
+                                                srcset='https://cdn.cafecito.app/imgs/buttons/button_1.png 1x, https://cdn.cafecito.app/imgs/buttons/button_1_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_1_3.75x.png 3.75x'
+                                                src='https://cdn.cafecito.app/imgs/buttons/button_1.png'
+                                                alt='Invitame un café en cafecito.app'
+                                                className='w-25 h-15  md:rounded-none  mx-auto'
+                                            />
+                                        </Button>
+                                    </a>
+                                </div>
                                 </div>
                             </div>
                         </div>
