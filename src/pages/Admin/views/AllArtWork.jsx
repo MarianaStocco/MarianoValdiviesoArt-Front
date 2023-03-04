@@ -76,13 +76,13 @@ const AllArtWork = () => {
                     {artwork.length ? artwork.map((art) => {
                       return (
                         <ProductCard 
-                        key={art._id}
-                        userName={art.user.userName}
-                        title={art.title}
-                        _id={art._id}
-                        img={art.img}
-                        seen={art.seen}
-                        lastCheck={art.lastCheck}                 
+                        // key={art._id}
+                        // userName={art.user.userName}
+                        // title={art.title}
+                        // _id={art._id}
+                        // img={art.img}
+                        // seen={art.seen}
+                        // lastCheck={art.lastCheck}                 
                         />
                         // <tr>
                         //   <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-nowrap p-4 text-left">

@@ -80,17 +80,17 @@ export default function Card({
           </div>
 
           <div className="flex items-center">
-            <div className="flex items-center gap-2">
+            {/* <div className="flex items-center gap-2">
               <img className="rounded-full h-10 w-10" src={userImage} alt="" />
               <Link to={"/artistprofile/" + userName}>
                 <h5 className="text-gray-600 hover:text-black">By {userName}</h5>
               </Link>
-            </div>
+            </div> */}
             
-            <div className="font-medium flex items-center absolute right-6 text-xl">
+            {/* <div className="font-medium flex items-center absolute right-6 text-xl">
               <MonetizationOnIcon className="text-green-500"/>
               <span className="relative bottom-0.5">{price}</span>
-            </div>
+            </div> */}
           </div>
           
         </div>
@@ -119,7 +119,7 @@ export default function Card({
             </i>
           </a>
         </li>
-        <li>
+        {/* <li>
           <a href="#">
             <i className="gr gr-bag">
               {stock > 0 ? <AiFillShopping
@@ -143,7 +143,7 @@ export default function Card({
               /> : <RemoveShoppingCartIcon onClick={(e) => {outOfStock(e)}} className={"text-red-500"}/>}
             </i>
           </a>
-        </li>
+        </li> */}
       </ul>
     </div>
   );

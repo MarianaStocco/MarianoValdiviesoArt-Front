@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import axios from "axios";
+// import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { signIn } from "../../redux/actions/userSignActions";
 import { Link, useNavigate } from "react-router-dom";
-import logoArteres from "../../assets/logoArterest.png"
+import logo from "../../assets/logo.png"
 import GoogleSignIn from "../GoogleButtons/GoogleSignIn";
 //MUI
 
@@ -46,19 +46,19 @@ export default function SignIn() {
                     <div className="xl:w-10/12">
                         <div className="block bg-white shadow-lg rounded-lg">
                             <div className="lg:flex lg:flex-wrap g-0 h-5/6">
-                                <div class="lg:w-6/12 flex items-center lg:rounded-l-lg bg-gradient-to-r from-red-600 via-red-400 to-red-600 text-gray-100" >
-                                    <div class="text-white px-4 py-6 md:p-12 md:mx-6">
-                                        <h4 class="text-2xl font-semibold mb-6">Fill up the form to have access to our whole list of artworks</h4>
-                                        <p class="text-x1">
+                                <div class="lg:w-6/12 flex items-center lg:rounded-l-lg bg-white text-gray-100" >
+                                    <div class="text-gray-900 px-4 py-6 md:p-12 md:mx-6">
+                                        <h4 class="text-2xl font-semibold mb-6">Fill up the form to have access to my whole list of artworks</h4>
+                                        {/* <p class="text-x1">
                                             Arterest is a website that was shaped with the goal of empowering artists and creating opportunities for success. It’s the place for artists to showcase their work with others.
-                                        </p>
+                                        </p> */}
                                     </div>
                                 </div>
                                 <div className="lg:w-6/12 px-4 md:px-0">
                                     <div className="md:p-12 md:mx-6">
                                         <div class="text-center">
                                             <img class="mx-auto w-48"
-                                                src={logoArteres}
+                                                src={logo}
                                                 alt="logo" />
                                            
                                         </div>
@@ -96,7 +96,7 @@ export default function SignIn() {
                                                 ) : null}
                                             </div>
 
-                                            <div className="text-center pt-1 mb-1 pb-1"><button type="submit" className="inline-block px-6 py-2.5  font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-1 bg-gradient-to-r from-red-600 via-red-400 to-red-200 text-gray-100">Log in</button></div>
+                                            <div className="text-center pt-1 mb-1 pb-1"><button type="submit" className="inline-block px-6 py-2.5  font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-yellow-500 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-1 bg-white text-gray-900">Log in</button></div>
 
                                             <div
                                                 class="flex items-center  justify-center my-2 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5">

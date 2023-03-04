@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from "react";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import axios from "axios";
+// import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { singUp } from "../../redux/actions/userSignActions";
-import logoArteres from "../../assets/logoArterest.png"
+import logo from "../../assets/logo.png"
 import { Link, useNavigate } from "react-router-dom";
 import GoogleSignUp from "../GoogleButtons/GoogleSignUp";
 //MUI 
@@ -53,7 +53,7 @@ export default function SignUp() {
                                     <div className="md:p-3 md:mx-6">
                                         <div class="text-center">
                                             <img class="mx-auto w-48"
-                                                src={logoArteres}
+                                                src={logo}
                                                 alt="logo" />
                                             {/* <h4 class="text-xl font-semibold mt-1 mb-12 pb-1">Welcome to Arterest</h4> */}
                                         </div>
@@ -110,7 +110,7 @@ export default function SignUp() {
                                                 ) : null}
                                             </div>
 
-                                            <div className="text-center pt-1 mb-5 pb-1"><button type="submit" className="inline-block px-6 py-2.5 text-white font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-blue-700 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3 bg-gradient-to-r from-red-600 via-red-400 to-red-200 text-gray-100">Sign Up</button></div>
+                                            <div className="text-center pt-1 mb-5 pb-1"><button type="submit" className="inline-block px-6 py-2.5  font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-yellow-500 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3 bg-white text-gray-500">Sign Up</button></div>
 
 
                                             <div
@@ -122,12 +122,12 @@ export default function SignUp() {
                                         </form>
                                     </div>
                                 </div>
-                                <div class="lg:w-6/12 flex items-center lg:rounded-r-lg rounded-b-lg lg:rounded-bl-none bg-gradient-to-r from-red-600 via-red-400 to-red-600 text-gray-100" >
-                                    <div class="text-white px-4 py-6 md:p-12 md:mx-6">
-                                    <h4 class="text-2xl font-semibold mb-6">Fill up the form to have access to our whole list of artworks</h4>
-                                        <p class="text-x1">
+                                <div class="lg:w-6/12 flex items-center lg:rounded-r-lg rounded-b-lg lg:rounded-bl-none bg-white text-gray-100" >
+                                    <div class="text-gray-700 px-4 py-6 md:p-12 md:mx-6">
+                                    <h4 class="text-2xl font-semibold mb-6">Fill up the form to have access to my whole list of artworks</h4>
+                                        {/* <p class="text-x1">
                                             Arterest is a website that was shaped with the goal of empowering artists and creating opportunities for success. It’s the place for artists to showcase their work with others.
-                                        </p>
+                                        </p> */}
                                     </div>
                                 </div>
 

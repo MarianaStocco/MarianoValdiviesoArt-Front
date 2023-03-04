@@ -133,8 +133,8 @@ export default function ArtPost(){
         try {
             const formData = new FormData();
             formData.append("file", input.img);
-            formData.append("upload_preset", "images");
-            axios.post("https://api.cloudinary.com/v1_1/onlypan/upload", formData)
+            formData.append("upload_preset", "ml_default");
+            axios.post("https://api.cloudinary.com/v1_1/drmm6mayx/image/upload", formData)
                 .then((resAxios) => {
                     dispatch(artRequest({...input, img: resAxios.data.secure_url}))
                     .then((res) => {

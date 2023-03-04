@@ -6,9 +6,6 @@ import { useSelector, useDispatch } from "react-redux";
 
 //COMPONENTS//PAGES
 import LandingPage from "./components/LandingPage/LandingPage";
-import Faq from "./pages/FAQ/Faq";
-import Terms from "./pages/Terms/Terms";
-import AboutUs from "./pages/AboutUs/AboutUs";
 import ContactUs from "./pages/ContactUs/ContactUs";
 import DetailProduct from "./components/DetailProduct/DetailProduct";
 import ArtistProfile from "./pages/ArtistProfile/ArtistProfile";
@@ -27,7 +24,6 @@ import Cart from "./components/Cart/Cart";
 import ProductDetail from "./pages/Admin/components/ProductDetail";
 import UserProfile from "./pages/UserProfile/UserProfile";
 import Footer from "./pages/Footer/Footer";
-import GiftCard from "./components/GiftCard/GiftCard";
 import AllRequests from "./pages/Admin/views/AllRequests";
 import Transaction from "./components/Transaction/Transaction";
 import TransF from "./components/Transaction/TransF";
@@ -95,10 +91,7 @@ function App() {
               <Home handleAdded={handleAdded} handleNotAdded={handleNotAdded} />
             }
           />
-          <Route path="/terms" element={<Terms />} />
           
-          <Route path="/faq" element={<Faq />} />
-          <Route path="/about" element={<AboutUs />} />
           <Route path="/contact" element={<ContactUs />} />
           <Route exact path="/detail/:id" element={<DetailProduct />} />
           <Route path="/artistprofile/:userName" element={<ArtistProfile />} />
@@ -126,14 +119,13 @@ function App() {
           <Route path="/signIn" element={<SignIn />} />
           <Route path="/verifyEmail/:id" element={<VerifyEmail />} />
           <Route exact path="/profile" element={<UserProfile />} />
-          <Route path="/giftcard" element={<GiftCard />} />
           <Route path="/buy" element={<Buy />} />
           <Route path="/transaction" element={<Transaction />} />
           <Route path="/fail" element={<TransF />} />
           <Route path="*" element={<CuatroOCuatro />} />
 
         </Routes>
-        <Footer />
+        {/* <Footer /> */}
         <Alert></Alert>
       </Router>
     </>

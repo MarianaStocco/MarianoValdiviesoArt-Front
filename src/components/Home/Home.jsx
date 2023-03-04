@@ -6,7 +6,6 @@ import { useSearchParams, useLocation, useNavigate } from 'react-router-dom';
 // Components
 import Card2 from '../Card/Card2';
 import Card from "../Card/Card"
-import FilterBar from '../FilterBar/FilterBar';
 // Actions
 import {
     activeLoading,
@@ -86,7 +85,6 @@ export const Home = ({ handleAdded, handleNotAdded }) => {
     return (
         <div className="min-h-full">
             <div className='w-full bg-white mb-5 shadow-md'>
-                <FilterBar setCurrentPage={setCurrentPage}></FilterBar>
                 {
                     filters.length ? searchName && filters.length === 1 ? null :
                         <div className="w-full h-10 bg-red-200 flex flex-initial items-center ">

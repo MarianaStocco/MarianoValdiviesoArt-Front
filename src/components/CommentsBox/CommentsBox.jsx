@@ -125,8 +125,8 @@ export default function CommentsBox({paintId}) {
         </>
         }
         <div className="w-full">
-            <h2 className="pb-8 shadow-md text-5xl text-center font-bold">Comments</h2>
-            <div className="m-10 underline text-3xl ml-20 font-bold">{ loggedUser ? "Leave a comment!" : "Login and comment!"}</div>
+            <h2 className="pb-8 shadow-md text-3xl ml-4 text-left font-semibold">Comments</h2>
+            <div className="m-10 text-1xl ml-20 font-light">{ loggedUser ? "Leave a comment!" : "Login and comment!"}</div>
             { loggedUser ? <div
                 className="flex-col w-full py-4 my-4 mx-auto mt-3 bg-white border-b-2 border-r-2 border-gray-200 sm:px-4 sm:py-4 md:px-4 sm:rounded-lg sm:shadow-sm md:w-2/3">
                     <div className="flex flex-row md-10">
