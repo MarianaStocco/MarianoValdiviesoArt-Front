@@ -15,9 +15,12 @@ import {
 import InfiniteScroll from "react-infinite-scroll-component";
 // Custom Styles
 import './home.css'
+import CoffeeIcon from '../../assets/bmc.png';
+import Paypal from '../../assets/paypal.png';
 //MUI COMPONENTS
 import Chip from "@mui/material/Chip";
 import LinearProgress from '@mui/material/LinearProgress';
+import { Button } from '@mui/material';
 
 function tagPrice(tagPrices) {
     return tagPrices.split("/").map(tag => "$" + tag).join("/")
@@ -107,6 +110,51 @@ export const Home = ({ handleAdded, handleNotAdded }) => {
                         </div> : null
                 }
             </div>
+            <nav className='flex md:order-2'>
+            <div className='items-center justify-between hidden w-full md:flex md:w-auto md:order-1' >
+                                    <span>
+                                        <h1  className='mt-6 text-2xl'>
+                                            Mis obras son tuyas! Agradecería mucho que apoyes mi trabajo!
+                                        </h1>
+                                    </span>
+                                <div className='flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'>
+                                    <a href="https://www.buymeacoffee.com/amhiank">
+                                        <Button >
+                                            <img
+                                                src={CoffeeIcon}
+                                                alt="buymeacoffee"
+                                                className='mt-2 w-15 h-10  md:rounded-none  mx-auto'
+                                            />
+                                        </Button>
+                                    </a>
+                                </div>
+                                <div className='flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'>
+                                    <a href="https://www.paypal.com/donate/?hosted_button_id=KJ687YP5RMRZC">
+                                        <Button >
+                                            <img
+                                                src={Paypal}
+                                                alt="paypaldonate"
+                                                className='w-15 h-20  md:rounded-none  mx-auto'
+                                            />
+                                        </Button>
+                                    </a>
+                                </div>
+                                <div className='flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700'>
+                                    <a href='https://cafecito.app/amhiank'
+                                        rel='noopener'
+                                        target='_blank'>
+                                        <Button >
+                                            <img
+                                                srcset='https://cdn.cafecito.app/imgs/buttons/button_1.png 1x, https://cdn.cafecito.app/imgs/buttons/button_1_2x.png 2x, https://cdn.cafecito.app/imgs/buttons/button_1_3.75x.png 3.75x'
+                                                src='https://cdn.cafecito.app/imgs/buttons/button_1.png'
+                                                alt='Invitame un café en cafecito.app'
+                                                className='w-25 h-15  md:rounded-none  mx-auto'
+                                            />
+                                        </Button>
+                                    </a>
+                                </div>
+                                </div>
+            </nav>
 
             <div id='scrollableDiv'>
                 <InfiniteScroll

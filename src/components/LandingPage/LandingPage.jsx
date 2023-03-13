@@ -1,6 +1,5 @@
 import { React } from "react";
 import { Link } from "react-router-dom";
-import Footer from "../../pages/Footer/Footer";
 import Portada from '../../assets/bg1.jpg'
 
 
@@ -30,8 +29,6 @@ export default function LandingPage() {
               </div>
           </div>
         </div>
-  
-      <Footer />
     </>
   );
 }

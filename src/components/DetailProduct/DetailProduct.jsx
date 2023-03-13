@@ -372,10 +372,6 @@ export default function DetailProduct() {
                                             <p className="items-center justify-center text-sm leading-none text-gray-600">{paint.technique}</p>
                                         </div>
                                         <div className="py-3 border-t border-gray-200 flex items-center justify-between">
-                                            <p className="text-base leading-4 text-gray-800">Stock</p>
-                                            <p className="items-center justify-center text-sm leading-none text-gray-600">{paint.stock}</p>
-                                        </div>
-                                        <div className="py-3 border-t border-gray-200 flex items-center justify-between">
                                             <p className="text-base leading-4 text-gray-800">Country of origin</p>
                                             <p className="items-center justify-center text-sm leading-none text-gray-600">{paint.origin}</p>
                                         </div>
@@ -393,14 +389,15 @@ export default function DetailProduct() {
                                             }}
                                             variant="contained"
                                             startIcon={<CloudDownloadIcon />}
+                                            color='success'
                                         >Download!
                                         </Button>
                                     </a>
                                 </div>
                                 <div className='row-span-3 gap-4'>
                                     <span>
-                                        <h1  className='mt-6'>
-                                            Mis obras son gratuitas! Por favor, apoya mi trabajo
+                                        <h1  className='mt-6 text-2xl'>
+                                            Mis obras son tuyas! Agradecería mucho que apoyes mi trabajo!
                                         </h1>
                                     </span>
                                 <div >
