@@ -48,7 +48,7 @@ export default function SignIn() {
                             <div className="lg:flex lg:flex-wrap g-0 h-5/6">
                                 <div class="lg:w-6/12 flex items-center lg:rounded-l-lg bg-white text-gray-100" >
                                     <div class="text-gray-900 px-4 py-6 md:p-12 md:mx-6">
-                                        <h4 class="text-2xl font-semibold mb-6">Fill up the form to have access to my whole list of artworks</h4>
+                                        <h4 class="text-2xl font-semibold mb-6">Use you Google Account to access to my whole list of artworks</h4>
                                         {/* <p class="text-x1">
                                             Arterest is a website that was shaped with the goal of empowering artists and creating opportunities for success. It’s the place for artists to showcase their work with others.
                                         </p> */}
@@ -65,7 +65,7 @@ export default function SignIn() {
                                         <form action="" onSubmit={signForm.handleSubmit}>
                                             <div className="text-4xl font-bold text-gray-500 m-5"><h1>Log In</h1></div>
                                             
-                                            <div>
+                                            {/* <div>
                                                 <label htmlFor="email" className="text-gray-500">Email</label>
                                                 <input
                                                     className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
@@ -96,11 +96,11 @@ export default function SignIn() {
                                                 ) : null}
                                             </div>
 
-                                            <div className="text-center pt-1 mb-1 pb-1"><button type="submit" className="inline-block px-6 py-2.5  font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-yellow-500 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-1 bg-white text-gray-900">Log in</button></div>
+                                            <div className="text-center pt-1 mb-1 pb-1"><button type="submit" className="inline-block px-6 py-2.5  font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-yellow-500 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-1 bg-white text-gray-900">Log in</button></div> */}
 
                                             <div
                                                 class="flex items-center  justify-center my-2 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5">
-                                                <p class="text-center font-semibold mx-4 mb-0">OR</p>
+                                                {/* <p class="text-center font-semibold mx-4 mb-0">OR</p> */}
                                             </div>
                                             {googleSeen ? <GoogleSignIn /> : null}
                                             <div className="flex items-center justify-left pt-4 pb-1">Not have an account yet? <span className="inline-block px-6 py-2.5 bg-transparent text-blue-600 font-medium text-xs leading-tight uppercase rounded hover:bg-gray-100 focus:text-blue-700 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 active:text-blue-800 transition duration-300 ease-in-out"><Link to={"/signUp"} >Sign Up here</Link></span></div>

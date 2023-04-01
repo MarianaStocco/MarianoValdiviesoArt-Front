@@ -60,8 +60,8 @@ export default function SignUp() {
                                         <form action="" onSubmit={formik.handleSubmit}>
                                             <div className="text-4xl font-bold text-gray-500 m-5"><h1>Sign Up</h1></div>
                                             <div>
-                                                <label htmlFor="userName" className="text-gray-500">Name</label>
-                                                <input
+                                                {/* <label htmlFor="userName" className="text-gray-500">Name</label> */}
+                                                {/* <input
                                                     className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                                                     id="userName"
                                                     name="userName"
@@ -72,14 +72,14 @@ export default function SignUp() {
                                                 />
                                                 {formik.touched.userName && formik.errors.userName ? (
                                                     <div className="text-sm text-red-500">{formik.errors.userName}</div>
-                                                ) : null}
+                                                ) : null} */}
                                                 {/* {formik.errors.name && (
                             <p className="text-sm text-red-500">{formik.errors.name}</p>
                         )} */}
                                             </div>
 
                                             <div>
-                                                <label htmlFor="email" className="text-gray-500">Email</label>
+                                                {/* <label htmlFor="email" className="text-gray-500">Email</label>
                                                 <input
                                                     className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
                                                     id="email"
@@ -91,10 +91,10 @@ export default function SignUp() {
                                                 />
                                                 {formik.touched.email && formik.errors.email ? (
                                                     <div className="text-sm text-red-500">{formik.errors.email}</div>
-                                                ) : null}
+                                                ) : null} */}
                                             </div>
 
-                                            <div>
+                                            {/* <div>
                                                 <label htmlFor="password" className="text-gray-500">Password</label>
                                                 <input
                                                     className="form-control block w-full px-3 py-1.5 text-base font-normal text-gray-700 bg-white bg-clip-padding border border-solid border-gray-300 rounded transition ease-in-out m-0 focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none"
@@ -108,14 +108,14 @@ export default function SignUp() {
                                                 {formik.touched.password && formik.errors.password ? (
                                                     <div className="text-sm text-red-500">{formik.errors.password}</div>
                                                 ) : null}
-                                            </div>
+                                            </div> */}
 
-                                            <div className="text-center pt-1 mb-5 pb-1"><button type="submit" className="inline-block px-6 py-2.5  font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-yellow-500 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3 bg-white text-gray-500">Sign Up</button></div>
+                                            {/* <div className="text-center pt-1 mb-5 pb-1"><button type="submit" className="inline-block px-6 py-2.5  font-medium text-xs leading-tight uppercase rounded shadow-md hover:bg-yellow-500 hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg transition duration-150 ease-in-out w-full mb-3 bg-white text-gray-500">Sign Up</button></div> */}
 
 
                                             <div
                                                 class="flex items-center justify-center my-4 before:flex-1 before:border-t before:border-gray-300 before:mt-0.5 after:flex-1 after:border-t after:border-gray-300 after:mt-0.5">
-                                                <p class="text-center font-semibold mx-4 mb-0">OR</p>
+                                                {/* <p class="text-center font-semibold mx-4 mb-0">OR</p> */}
                                             </div>                                        
                                             {googleSeen ? <GoogleSignUp /> : null}
                                             <div className="flex items-center justify-left pb-6">Already have an account? <span className="inline-block px-6 py-2.5 bg-transparent text-blue-600 font-medium text-xs leading-tight uppercase rounded hover:bg-gray-100 focus:text-blue-700 focus:bg-gray-100 focus:outline-none focus:ring-0 active:bg-gray-200 active:text-blue-800 transition duration-300 ease-in-out"><Link to={"/signIn"} >Login here</Link></span></div>
@@ -124,7 +124,7 @@ export default function SignUp() {
                                 </div>
                                 <div class="lg:w-6/12 flex items-center lg:rounded-r-lg rounded-b-lg lg:rounded-bl-none bg-white text-gray-100" >
                                     <div class="text-gray-700 px-4 py-6 md:p-12 md:mx-6">
-                                    <h4 class="text-2xl font-semibold mb-6">Fill up the form to have access to my whole list of artworks</h4>
+                                    <h4 class="text-2xl font-semibold mb-6">Use your Google Account to access to my whole list of artworks</h4>
                                         {/* <p class="text-x1">
                                             Arterest is a website that was shaped with the goal of empowering artists and creating opportunities for success. It’s the place for artists to showcase their work with others.
                                         </p> */}
