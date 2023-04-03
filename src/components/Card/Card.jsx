@@ -37,11 +37,11 @@ export default function Card({
 
  
   
-  const handleFavoritesState = (e) => {
-    let favs = JSON.parse(localStorage.getItem("favList"));
-    let answer = favs?.map(fav => fav === _id)
-    return answer
-  }
+  // const handleFavoritesState = (e) => {
+  //   let favs = JSON.parse(localStorage.getItem("favList"));
+  //   let answer = favs?.map(fav => fav === _id)
+  //   return answer
+  // }
 
   function outOfStock(e){
     e.preventDefault()
@@ -98,7 +98,7 @@ export default function Card({
       <ul className="social-media">
         <li>
           <a href="#">
-            <i className="gr gr-pin" id={handleFavoritesState().includes(true) && "fav"}>
+            {/* <i className="gr gr-pin" id={handleFavoritesState().includes(true) && "fav"}>
               <AiFillPushpin
                 onClick={(e) =>{
                   addToFav(
@@ -116,7 +116,7 @@ export default function Card({
                   handleFavoritesState()}
                 }
               />
-            </i>
+            </i> */}
           </a>
         </li>
         {/* <li>

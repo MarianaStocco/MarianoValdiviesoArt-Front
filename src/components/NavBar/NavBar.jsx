@@ -57,13 +57,13 @@ export default function NavBar() {
       <Searchbar />
 
       <div className="flex gap-8 md:ml-auto items-center md:w-1/3 w-full md:justify-end justify-around md:pr-5">
-        <Link to="/favorites">
+        {/* <Link to="/favorites">
           <Tooltip title="Pinned Favorites">
             <IconButton>
               <AiFillPushpin className="text-3xl text-black-600" />
             </IconButton>
           </Tooltip>
-        </Link>
+        </Link> */}
 
         {/* <Link to="/cart" className="relative">
           <Tooltip title="Shopping Cart">
