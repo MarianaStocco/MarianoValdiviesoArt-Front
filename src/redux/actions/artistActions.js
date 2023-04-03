@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const url = "http://localhost:3001"
+const url = "https://marianovaldivieso.onrender.com"
 
 export function artRequest(formData) {
     const token = localStorage.getItem("token")
